@@ -6,4 +6,6 @@ class NoteRepository(val noteDao: NoteDao) {
 
     fun getNote(noteId: String) = noteDao.getNote(noteId)
 
+    fun addNote(note: Note) = noteDao.insertNote(note)
+
 }

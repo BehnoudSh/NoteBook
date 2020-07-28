@@ -5,7 +5,9 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
-
+    dataBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "ir.navaco.behnoudnote"
         minSdkVersion 21
