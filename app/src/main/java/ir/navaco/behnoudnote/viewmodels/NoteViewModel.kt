@@ -8,9 +8,10 @@ import ir.navaco.behnoudnote.data.AppDataBase
 import ir.navaco.behnoudnote.data.Note
 import ir.navaco.behnoudnote.data.NoteRepository
 
-class NoteViewModel(application: Application) : ViewModel() {
+public class NoteViewModel(application: Application) : AndroidViewModel(application) {
 
     val noteRepository: NoteRepository
+
 
     init {
         val notesDao = AppDataBase.getDatabase(application).noteDao()

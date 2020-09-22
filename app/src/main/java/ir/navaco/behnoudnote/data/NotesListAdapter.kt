@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.navaco.behnoudnote.R
-import kotlinx.android.synthetic.main.recyclerview_item.view.*
 
 class NotesListAdapter(val context: Context) : RecyclerView.Adapter<NotesListAdapterViewHolder>() {
 
@@ -38,6 +37,6 @@ class NotesListAdapter(val context: Context) : RecyclerView.Adapter<NotesListAda
 
 class NotesListAdapterViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-    val tv_noteTitle: TextView = view.textView
+    val tv_noteTitle: TextView = view.findViewById(R.id.textViewtv)
 
 }

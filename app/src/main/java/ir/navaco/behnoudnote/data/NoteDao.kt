@@ -1,6 +1,6 @@
 package ir.navaco.behnoudnote.data
 
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
 import androidx.room.*
 
 
@@ -8,7 +8,7 @@ import androidx.room.*
 interface NoteDao {
 
     @Query("SELECT * FROM notes")
-    fun getNotes(): MutableLiveData<List<Note>>
+    fun getNotes(): LiveData<List<Note>>
 
     @Insert
     fun insertNote(note: Note)
