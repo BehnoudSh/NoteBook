@@ -1,10 +1,8 @@
 package ir.navaco.behnoudnote.data
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
+
 
 @Dao
 interface NoteDao {
@@ -17,5 +15,11 @@ interface NoteDao {
 
     @Insert
     fun insertNote(note: Note)
+
+    @Delete
+    fun deleteNote(note: Note)
+
+    @Update
+    fun update(note: Note)
 
 }

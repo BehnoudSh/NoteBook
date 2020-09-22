@@ -8,4 +8,8 @@ class NoteRepository(val noteDao: NoteDao) {
 
     fun addNote(note: Note) = noteDao.insertNote(note)
 
+    fun deleteNote(note: Note) = noteDao.deleteNote(note)
+
+    fun updateNote(note: Note) = noteDao.update(note)
+
 }

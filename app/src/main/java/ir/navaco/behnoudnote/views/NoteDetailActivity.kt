@@ -12,13 +12,5 @@ class NoteDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note_detail)
 
-//        val noteDetailViewModel: NoteViewModel
-//
-//        val binding = DataBindingUtil.inflate<ActivityNoteDetailBinding>(
-//            inflater, R.layout.activity_note_detail, container, false
-//        )
-//
-//        binding.lifecycleOwner = viewLifecycleOwner
-//        binding.viewModel = noteDetailViewModel
     }
 }
