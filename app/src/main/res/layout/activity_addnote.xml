@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-light"
-        android:hint="@string/hint_word"
+        android:hint="New To Do"
         android:inputType="textAutoComplete"
         android:textSize="18sp" />
 
@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@color/colorPrimary"
+        android:background="#000"
         android:text="@string/button_save"
-        android:textColor="#000" />
+        android:textColor="#FFF" />
 
 </LinearLayout>
