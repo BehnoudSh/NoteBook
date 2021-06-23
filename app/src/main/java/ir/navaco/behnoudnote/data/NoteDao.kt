@@ -11,6 +11,6 @@ interface NoteDao {
     fun getNotes(): LiveData<List<Note>>
 
     @Insert
-    fun insertNote(note: Note)
+      fun insertNote(note: Note)
 
 }
